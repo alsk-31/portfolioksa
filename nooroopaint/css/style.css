@@ -155,12 +155,11 @@ nav:hover .bg {
   justify-content: space-between;
 }
 .newice .news {
-  border: 1px solid #000;
   width: 650px;
 }
 .newice .box {
   display: flex;
-  height: 200px;
+  height: 175px;
 }
 .newice .title {
   display: flex;
@@ -170,15 +169,42 @@ nav:hover .bg {
 .newice h2 {
   margin-bottom: 20px;
 }
+.newice .title a {
+  color: #757575;
+}
+.newice .news .box {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
 .newice .news .box .picture {
   width: 250px;
   height: 150px;
   flex-shrink: 0;
   background: url(../images/news.jpg) center/cover;
+  margin-right: 30px;
 }
-.newice .news .box .picture .leftright p {
+.newice .news .box .leftright {
+  justify-content: space-between;
+  width: 380px;
+  height: 150px;
+}
+.newice .news .box .boxright p.top2 {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 라인수 */
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.5em;
+}
+.newice .news .box .boxright p span {
+  font-size: 14px;
+  color: #757575;
+}
+
+.newice .news .newslist ul li span {
+  line-height: 1.8em;
+  font-size: 14px;
+  justify-content: space-between;
+  color: #757575;
 }
