@@ -222,7 +222,6 @@ nav:hover .bg {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
   margin-bottom: 20px;
 }
 .contech .title a {
@@ -313,8 +312,14 @@ nav:hover .bg {
   width: 1280px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  border-top: 1px dashed #ccc;
+}
+.blognow .conblog .blog {
+  width: 650px;
 }
 .blognow .title {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -322,18 +327,83 @@ nav:hover .bg {
 .blognow .title a {
   color: #757575;
 }
-.blognow h2 {
-  margin-bottom: 10px;
+.blognow .conblog .blog a img {
+  width: 650px;
+  height: 400px;
 }
-.blognow .conblog img {
-  width: 700px;
-  height: 380px;
-  object-fit: cover;
-  margin-bottom: 30px;
+.blognow .conblog .blog a h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
-.blognow .connow img {
+.blognow .conblog .blog > a > p {
+  line-height: 1.4em;
+}
+.blognow .connow .noroonow {
+  width: 550px;
+}
+.blognow .connow .noroonow a img {
+  width: 550px;
+  height: 400px;
+}
+.blognow .connow .noroonow a h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.conlast {
+  margin-top: 50px;
+  width: 100%;
+  height: 550px;
   display: flex;
-  height: 380px;
-  object-fit: cover;
-  margin-bottom: 30px;
+  background: #f6f6f6;
+  align-items: center;
+  justify-content: space-between;
+}
+.conlast .lastinner {
+  width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+}
+.conlast .lastinner > ul {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+.conlast .lastinner > ul > li {
+  position: relative;
+  overflow: hidd;
+}
+.conlast .lastinner > ul > li .overc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.conlast .lastinner > ul > li .overc p {
+  font-weight: 900;
+}
+.conlast .lastinner > ul > li .overc a {
+  display: block;
+  padding: 10px;
+  background: #fff;
+  font-size: 14px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: 0.5s ease-in 0.2s;
+}
+.conlast .lastinner > ul > li .overc a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: 0s;
+}
+.conlast .lastinner > ul > li .overc {
+  background: rgba(0, 0, 0, 0.5);
 }
