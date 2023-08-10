@@ -19,7 +19,7 @@ body {
 }
 .top .topmenu {
   width: 1280px;
-  height: 100px;
+  height: 80px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -28,8 +28,13 @@ body {
 .top .topmenu ul {
   display: flex;
   align-items: center;
+  margin-left: 14px;
+}
+.top .topmenu ul.left li:first-child {
+  margin-top: 30px;
 }
 .top .topmenu ul.right {
+  margin-top: 20px;
   height: 50px;
 }
 .top .topmenu ul li {
