@@ -75,6 +75,7 @@ body {
 }
 nav {
   position: relative;
+  z-index: 999;
 }
 nav > ul {
   display: flex;
@@ -149,12 +150,15 @@ nav:hover .bg {
 .page {
   display: flex;
   position: relative;
-  top: 80px;
+  top: 40px;
   width: 1280px;
   margin: 0 auto;
 }
-.page h2 {
-  line-height: 70px;
+.page .leftnav p,
+.page .rightwrap p {
+  line-height: 60px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .page .leftnav {
   margin-bottom: 50px;
@@ -163,23 +167,141 @@ nav:hover .bg {
   width: 170px;
   height: 1px;
   background: #ccc;
+  margin-bottom: 50px;
 }
-.page .right ul {
+.page .leftnav ul {
+  line-height: 35px;
+  font-size: 16px;
+}
+.page .leftnav ul li a:focus {
+  color: #e31a2c;
+  font-weight: 500;
+}
+.page .leftnav ul li a:focus::before {
+  content: "-   ";
+  font-weight: 500;
+}
+.page .leftnav ul li a:hover .page .right ul {
+  position: absolute;
+  top: 21px;
   display: flex;
 }
 .page .right {
   margin-left: 100px;
 }
-.page .right ul li {
-  font-size: 14px;
-  margin-left: 10px;
+.page .right ul {
+  display: flex;
+  position: absolute;
+  top: 21px;
+  left: 1085px;
+}
+.page .right ul li a {
+  font-size: 13px;
+  color: #757575;
+}
+.page .right ul li::before {
+  content: "|";
+  font-size: 12px;
+  padding: 0 10px;
+  color: #757575;
+}
+.page .right ul li:first-child::before {
+  content: "";
 }
 .page .right .pline {
   width: 1000px;
   height: 1px;
   background: #ccc;
+  margin-bottom: 50px;
 }
-/* 
+.page .right .maininfo h2 {
+  margin-bottom: 18px;
+}
+.page .right .maininfo p {
+  line-height: 1.6em;
+  margin-bottom: 40px;
+}
+.page .right .maininfo img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 70px;
+}
+.page .right .maincon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.page .right .maincon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.page .right .maincon img {
+  width: 350px;
+  height: 180px;
+  margin-top: 90px;
+}
+.page .right .coninner {
+  margin-left: 80px;
+}
+.page .right .coninner p {
+  margin-top: 25px;
+  line-height: 1.6em;
+}
+.factory {
+  height: 570px;
+  margin-top: 150px;
+  display: flex;
+}
+.factory img {
+  width: 420px;
+  height: 420px;
+  margin-top: 60px;
+}
+.factory.facwrap {
+  display: flex;
+  margin: 0 auto;
+}
+.factory.b .facwrap {
+  display: flex;
+  margin: 0 auto;
+}
+.factory dl {
+  margin-right: 80px;
+  margin-top: 70px;
+}
+.factory.b dl {
+  margin-left: 80px;
+  margin-top: 70px;
+}
+.factory dl dt {
+  margin-bottom: 30px;
+  line-height: 1.6em;
+}
+.factory dl > dd {
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+
+.factory .faclist p strong {
+  display: inline-block;
+  line-height: 1.6em;
+  width: 130px;
+}
+.factory .facwrap .fline {
+  margin-top: -25px;
+  position: absolute;
+  border-bottom: 1px dashed #ccc;
+  width: 500px;
+}
+.facbg {
+  margin-top: -560px;
+  background: #f6f6f6;
+  width: 100%;
+  height: 600px;
+}
+
+/*푸터*/
 footer {
   background: #2d2d2d;
   height: 200px;
@@ -249,4 +371,4 @@ footer .footer_infoleft ul li:last-child {
 }
 footer .footer_inforight img {
   margin-left: 10px;
-} */
+}
