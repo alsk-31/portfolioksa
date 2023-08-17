@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .list {
+        color: red;
+        border: 1px solid #000;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="add">add</button>
+    <button id="remove">remove</button>
+    <button id="toggle">toggle</button>
+    <div id="my" class="list">classList 속성</div>
+    <p id="demo"></p>
+    <p id="p01" class="a1 b1 c1">1</p>
+    <p id="p02"></p>
+
+    <script>
+      let ele = document.getElementById("my").classList;
+      document.getElementById("add").onclick = function () {
+        ele.add("list");
+      };
+      document.getElementById("remove").onclick = function () {
+        ele.remove("list");
+      };
+      document.getElementById("toggle").onclick = function () {
+        ele.toggle("list");
+      }; /*동일된 구문은 서식 밖으로 빼서 공통으로 줄수 있다*/
+      let a = ele.contains("list");
+      document.getElementById("demo").innerHTML = a;
+      let num = document.getElementById("p01").classList.length;
+      let b = document.getElementById("p01").classList;
+      let c = "";
+      let d = "";
+      console.log(num + b);
+      b.forEach(function (keys, item) {
+        //c = c + 1; //c+=1
+        //c = c + "keys " + item + "=" + keys + "<br>";
+        c += "keys " + item + "=" + keys + "\r"; /*줄바꿈*/
+        d += "keys " + item + "=" + keys + "<br>";
+
+        console.log(c);
+        document.getElementById("p02").innerHTML = d;
+      }); /*기존의 값은 지키면서 + 연산자를 이용하여 내용을 더하는 방법?.. 변수에는 따옴표를 넣지않고 입력, item은 인덱스번호를 가져옴(0,1,2)*/
+      console.log("하나" + "둘" + "셋");
+      console.log(1 + 2 + 3);
+
+      //   document.getElementById("add").onclick = function () {
+      //     let ele = document.getElementById("my").classList;
+      //     ele.add("list");
+      //   };
+      //   document.getElementById("remove").onclick = function () {
+      //     let ele = document.getElementById("my").classList;
+      //     ele.remove("list");
+      //   };
+      //   document.getElementById("toggle").onclick = function () {
+      //     let ele = document.getElementById("my").classList;
+      //     ele.toggle("list");
+      //   };
+    </script>
+  </body>
+</html>

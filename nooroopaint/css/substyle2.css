@@ -241,7 +241,7 @@ nav:hover .bg {
 .cagobtn img {
   width: 280px;
   height: 280px;
-  border-radius: 30px;
+  border-radius: 50%;
   border: 1px solid rgb(223, 223, 223);
 }
 .cagobtn p {
