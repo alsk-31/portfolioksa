@@ -129,22 +129,128 @@ header {
 .submenu .lnb > ul > li a:hover {
   color: #f00;
 }
+
 header .hright {
   align-items: center;
 }
+/*본문*/
 .slide {
-  width: 100%;
-  height: 800px;
+  width: 2000px;
+  height: 850px;
+  margin: 0 auto;
 }
-.besttowel {
+article {
   width: 1280px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 70px;
 }
-
-.besttowel .bestcon {
-  width: 300px;
-  height: 300px;
+article > h2 {
+  width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+}
+article > p {
+  margin-top: 10px;
+  width: 1280px;
+  text-align: center;
+}
+article .bestcon {
+  margin-top: 40px;
+  width: 1280px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+}
+.bestcon img {
+  width: 290px;
+  height: 300px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+p#ptitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+p#psub {
+  font-size: 14px;
+  color: rgb(124, 124, 124);
+}
+h3 {
+  margin-top: 8px;
+}
+#ibtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+#ibtn p.m {
+  font-size: 13px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+  padding: 1px 6px;
+  color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  margin-bottom: 75px;
+}
+#ibtn p.m:last-child::after {
+  margin-right: 0px;
+}
+#ibtn p.new,
+#ibtn p.hot {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+.backba {
+  margin-top: 50px;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: -999;
+  background: rgb(245, 245, 245);
+}
+.banner {
+  margin-top: 80px;
+  width: 1280px;
+  margin: 0 auto;
+}
+.banner h2 {
+  text-align: center;
+  width: 1280px;
+}
+.banner p {
+  text-align: center;
+  width: 1280px;
+}
+.banner .special {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.banner {
+  margin-top: 150px;
+  width: 1280px;
+}
+.banner > h2 {
+  width: 1280px;
+  margin: 0;
+}
+.banner > p {
+  margin-top: 10px;
+  width: 1280px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.banner .special {
+  margin: 0 auto;
+  width: 1280px;
+}
+.banner .special img {
+  width: 628px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
 }
