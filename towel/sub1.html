@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>oo타올</title>
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylesub1.css" />
     <link rel="stylesheet" href="css/swiper-bundle.css" />
 <style></style>
   </head>
@@ -114,23 +114,27 @@
             <li><a href="#"><img src="image/total_menu_icon.png" alt="totalmenu"></a></li>
       </ul>
     </header>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="image/main_01.jpg" alt="main_01"></div>
-        <div class="swiper-slide"><img src="image/main_02.jpg" alt="main_02"></div>
-        <div class="swiper-slide"><img src="image/main_03.jpg" alt="main_03"></div>
-        <div class="swiper-slide"><img src="image/main_04.jpg" alt="main_04"></div>
-        <div class="swiper-slide"><img src="image/main_05.jpg" alt="main_05"></div>
-      </div>
-      <div class="swiper-pagination"></div>
-     
-    </div>
 
-
+ <div class="wrapslide">
+      <!-- 백그라운드 이미지 넣기 -->
+     <div class="swiper-slide">
+          <!-- 제목 -->
+        <h1>PREMIUM</h1>
+        <img src="image/wash.jpg" alt="확인용">
+     </div>
+ </div>
+    <!-- /.wrapper -->
+    <ul id="menu_item"> 
+        <li id="menu01" ><a href="#">T.헤리티지</a></li>
+        <li id="menu02"><a href="#">발렌티노 크리스티</a></li>
+        <li id="menu03" ><a href="#">G.sol</a></li>   
+    </ul>
   <article>
-    <h2>베스트 셀러</h2>
-    <p>ㅇㅇㅇ에서 추천하는 타올을 만나보세요</p>
+    <a href="#">출시순</a>
+    <a href="#">출시순</a>
+    <a href="#">출시순</a>
+    <a href="#">출시순</a>
+    
     <div class="bestcon">
       <div class="bcon1"><img src="image/15299170872000_pic_300.jpg" alt="">
         <p id="ptitle">뱀부 호텔타월 200g 10장</p>
@@ -178,57 +182,10 @@
     </div>
   </article>
 
-<div class="backba"></div>
 
-    <div class="banner">
- <h2>주문제작 타올</h2>
-        <p>특별함을 담은 수건을 선물하세요</p>
-      <div class="special">
-        <img src="image/benner_01.jpg" alt="benner_01">
-        <img src="image/benner_01.jpg" alt="benner_01">
-      </div>
-    </div>
-
-   
-      <article class="ourcon">
-        <ul class="our_list">
-            <li>process<br><span>주문과정</span></li>
-            <li>printpakage<br><span>답례품</span></li>
-            <li>washing tip<br><span>세탁안내</span></li>
-            <li>recomend<br><span>맞춤추천</span></li>
-            <li>about towel<br><span>타올정보</span></li>
-            <li>catalogue<br><span>카탈로그</span></li>
-        </ul>
-        </article>
- 
 
 <script src="js/index.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    direction: "horizontal",
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    mousewheel: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      mousewheel: true,
-    }
-  });
 </script>
   </body>
 </html>
