@@ -285,6 +285,7 @@ header .hright {
   height: 200px;
   object-fit: cover;
 }
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 .tapwrap {
   width: 1280px;
   margin: 0 auto;

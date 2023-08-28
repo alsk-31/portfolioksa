@@ -124,5 +124,12 @@ https://webpublic.co.kr/product/list.html?cate_no=61
 https://abcdqbbq.tistory.com/category/Frontend/Javascript
 자바스크립트 예시 코딩 예제 다양한 정보
 
+https://meyerweb.com/eric/tools/css/reset/ - 스타일초기화코드
+↓모든스타일코드 복사후 스타일 
+https://www.favicon-generator.org/ 파비콘만들기, /너무큰이미지 하지말것16*16(.png), favcio.ico
+파비콘 ( 창에 보여지는 작은 아이콘 )>> 헤드안에 link:favicon
+
+../ 상위 
+~ 현재경로
 
 
