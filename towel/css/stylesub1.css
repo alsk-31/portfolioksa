@@ -142,7 +142,7 @@ header .hright {
   justify-content: center;
   align-items: center;
 }
-.swiper-slide > h1 {
+.swiper-slide > h3 {
   position: absolute;
   text-align: center;
   line-height: 200px;
@@ -193,13 +193,29 @@ header .hright {
   height: 200px;
   margin: 0 auto;
 }
-
+.brandstory {
+  width: 1280px;
+  margin-top: 90px;
+  text-align: left;
+  display: flex;
+}
+.brandstory img {
+  width: 200px;
+  height: 200px;
+}
+.brandstory .text {
+  margin-left: 65px;
+}
+.brandstory .text p {
+  margin-top: 20px;
+  line-height: 1.6em;
+}
 /*탭메뉴컨텐츠*/
 
 .selllist {
   width: 1280px;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .selllist .bestcon {
