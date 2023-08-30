@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link
-      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
-      rel="stylesheet"
-      type="text/css"
-    /> -->
+    <script src="js/jquery-3.7.1.min.js"></script>
     <title>NOOROO PAINT</title>
   </head>
   <body>
- 
-      <div id="wrap">
+    <div id="wrap">
         <header>
           <div class="top">
             <div class="topmenu">
@@ -85,12 +80,10 @@
               <li><a href="#">ESG경영</a>
               <ul>
                 <li><a href="#">ESG개요</a></li>
-                 <div class="esg">
-                   <li><a href="#">환경<span>(Environment)</span></a></li>
-                    <li><a href="#">사회<span>(Social)</span>
-                    </a></li>
-                    <li><a href="#">지배구조<span>(Governance)</span></a></li>
-                 </div>
+                   <li><a href="#">환경<span> Environment</span></a></li>
+                    <li><a href="#">사회<span> Social</span> </a></li>
+                    <li><a href="#">지배구조<span> Governance</span></a></li>
+              
                 <li><a href="#">ESG자료실</a></li>
               </ul></li>
               <li><a href="#">투자정보</a>
@@ -116,7 +109,44 @@
             <div class="bg"></div>
           </nav>
         </header>
-        <div class="slide"></div>
+        <div class="stage">
+          <ul class="slider">
+            <li class="item1">
+              <video tabindex="-1" width="920" height="518" controls muted autoplay>
+                <source src="images/vedio_02.mp4" />
+              </video>
+            </li>
+            <li class="item2">
+              <video
+                tabindex="-1"
+                width="920"
+                height="518"
+                controls
+                poster="images/poster2.jpg"
+              >
+                <source src="images/vedio_01.mp4" />
+              </video>
+            </li>
+            <li class="item3">
+              <video
+                tabindex="-1"
+                width="920"
+                height="518"
+                controls
+                poster="images/poster1.jpg"
+              >
+                <source src="images/vedio_03.mp4" />
+              </video>
+            </li>
+          </ul>
+          <div class="video_btn_wrap">
+            <span>
+              <button type="button" class="prev">이전</button>
+              <button type="button" class="next">다음</button>
+            </span>
+          </div>
+        </div>
+        
         <!--뉴스 및 공지사항 시작-->
         <div class="newice">
         <div class="news">
@@ -303,6 +333,105 @@
         </div>
             </div>
           </footer>
-    </div> 
+    </div>
+    <script>
+      $(function () {
+        var $ids = $("video"),
+          tgs = [];
+        var $eles = $(".slider>li");
+        var eles = $eles.toArray();
+        var pt = [];
+        var center = Math.floor(eles.length / 2);
+        var total = eles.length;
+        var repeat = 1,
+          count = 0;
+        var playSlider = function () {
+          setCss();
+        };
+        var video = $("video");
+        function setCss() {
+          eles.forEach(function (e, i) {
+            pt[i] = $(e).css(["top", "height", "left", "z-index", "opacity"]);
+          });
+
+          for (var i = 0; i < center; i++) {
+            eles.unshift(eles.pop());
+            eles.forEach(function (e, i) {
+              count++;
+              $(e).css(pt[i]).removeClass("click");
+              if (count == Math.abs(repeat) * total) {
+                $(eles[center]).addClass("click");
+                count = 0;
+              } else {
+              }
+            });
+          }
+        }
+
+        function movePanel() {
+          eles.forEach(function (e, i) {
+            $(e).removeClass("click");
+            $(e)
+              .stop(true, true)
+              .animate(pt[i], 200, function () {
+                count++;
+                if (count === Math.abs(repeat) * total) {
+                  $(eles[center]).addClass("click");
+
+                  var iframe = $(".click video")[0];
+                  iframe.play();
+                  sliderAfter($(eles[center]));
+                  (count = 0), (isStop = false);
+                } else {
+                }
+              });
+
+            var iframe = $("video")[i];
+            iframe.pause();
+          });
+        }
+        $eles.on("click", function (e) {
+          if (!$(this).hasClass("click") && !$(this).is(":animated")) {
+            repeat = center - parseInt(eles.indexOf(this));
+            repeat < 0 ? repeatFn(nextFn) : repeatFn(prevFn);
+          }
+        });
+        function repeatFn(m) {
+          for (var i = 0; i < Math.abs(repeat); i++) {
+            m();
+          }
+        }
+        $(".prev").on("click", function (e) {
+          prevFn();
+        });
+        $(".next").on("click", function (e) {
+          nextFn();
+        });
+        function prevFn() {
+          eles.unshift(eles.pop());
+          movePanel();
+        }
+        function nextFn() {
+          eles.push(eles.shift());
+          movePanel();
+        }
+        function sliderBefore() {
+          tgs.forEach(function (e, i) {
+            var iframe = $("video")[0];
+          });
+          iframe.pause();
+        }
+        function sliderAfter(ele) {
+          if (ele.find("video").length) {
+            current = $.grep(tgs, function (i) {
+              return i.a == ele.find("video")[0];
+              var iframe = $("video")[0];
+              iframe.play();
+            });
+          }
+        }
+        playSlider();
+      });
+    </script>
   </body>
 </html>
