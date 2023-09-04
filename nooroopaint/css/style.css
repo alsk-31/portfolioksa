@@ -205,7 +205,7 @@ nav:hover .bg {
   height: 45x;
 }
 button.prev {
-  background: url(images/bt_prev_big2.png) no-repeat;
+  background: url(../images/bt_prev_big2.png) no-repeat;
   width: 46px;
   height: 85px;
   margin-left: -80px;
@@ -213,7 +213,7 @@ button.prev {
   font-size: 0;
 }
 button.next {
-  background: url(images/bt_next_big2.png) no-repeat;
+  background: url(../images/bt_next_big2.png) no-repeat;
   width: 46px;
   height: 85px;
   margin-left: 980px;
