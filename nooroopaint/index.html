@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
     <title>NOOROO PAINT</title>
   </head>
   <body>
@@ -295,8 +297,22 @@
             </div>
           </li>
             </ul>
-                  </div>
+              </div>
           </div>
+          <div class="swiper mySwiper"><!--패밀리 사이트 롤링(로고)-->
+            <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_facebook.png" alt="bnr1"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_instagram.png" alt="bnr2"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_Naverblog.png" alt="bnr3"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_naverTv.png" alt="bnr4"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_paintg.png" alt="bnr5"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_pantone.png" alt="bnr6"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_soonnsoo.png" alt="bnr7"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_btn_paintitsuda.png" alt="bnr8"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_btn_youtube.png" alt="bnr9"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/footer_bnr_facebook.png" alt="bnr1"></a></div>
+      </div>
+    </div>
           <!--푸터-->
           <footer>
             <div class="foot">
@@ -334,7 +350,7 @@
             </div>
           </footer>
     </div>
-    <script>
+    <script>//상단 슬라이드 영상 스크립트
       $(function () {
         var $ids = $("video"),
           tgs = [];
@@ -433,5 +449,30 @@
         playSlider();
       });
     </script>
+  <script>//패밀리사이트 롤링 스크립트
+    $(function () {
+      var swiper = new Swiper(".mySwiper", {
+        speed: 8000,
+        loop: true,
+        spaceBetween: 0,
+        slidesPerView: 5,
+        //centeredSlides: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+      });
+      $(".mySwiper").hover(
+        function () {
+          swiper.autoplay.stop();
+          $(".swiper-wrapper").css({ trasition: "0" });
+        },
+        function () {
+          swiper.autoplay.start();
+        }
+      );
+    });
+  </script>
   </body>
 </html>

@@ -140,4 +140,12 @@ https://www.findkapoor.com/membership.html#
 https://24901miles.co.kr/brand/liebherr.html
 반응형 웹사이트 (기기 드라이어..등)
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+swiper  jquery 를 먼저 위에 링크 후 제작한 스크립트를
+밑에 적어야함 
+https://jqueryui.com/
+다운로드- 버전 1.13.2(제일상위)위에잇는거로 
+기본선택사항 냅두고 다운로드(하단버튼)
+압축풀고 >jquery-ui.min --> js폴더에 붙여넣기
+
 
