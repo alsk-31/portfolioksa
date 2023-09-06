@@ -274,30 +274,36 @@ nav:hover .bg {
   display: flex;
   flex-wrap: wrap;
 }
-.page .right #tabcon2 .tabwrap .tableft {
-  width: 200px;
-}
-.page .right #tabcon2 .tabwrap .tableft p {
-  width: 100px;
-  height: 100px;
-  font-size: 30px;
-  line-height: 0.9em;
-  font-weight: 800;
-}
-.page .right #tabcon2 .tabwrap .tabright {
-  display: flex;
-  width: 800px;
-}
+
 .page .right #tabcon2 .tabwrap .tabright p {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
 }
 .page .right #tabcon2 .tabwrap .tabright ul {
+  position: relative;
   list-style: disc;
-  margin-left: 80px;
+  left: 200px;
+  margin-bottom: 50px;
+}
+.page .right #tabcon2 .tabwrap .tabright > li {
+  list-style: none;
+  display: flex;
 }
 .page .right #tabcon2 .tabwrap .tabright ul li {
   line-height: 1.8em;
+}
+.tabwrap .tabright .year::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 5px solid #00abe3;
+  position: absolute;
+  top: 2px;
+  left: 100%;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 10;
 }
 
 /*푸터*/

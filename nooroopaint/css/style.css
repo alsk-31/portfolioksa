@@ -480,8 +480,10 @@ button.next {
   color: #000;
 }
 .conlast .lastinner > ul > li .overc p span {
-  font-weight: 900;
-  font-size: 16px;
+  font-family: arial;
+  margin-bottom: 5px;
+  font-size: 13px;
+
   color: #000;
 }
 .conlast .lastinner > ul > li .overc a {
