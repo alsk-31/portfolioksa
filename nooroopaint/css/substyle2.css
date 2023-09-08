@@ -77,6 +77,7 @@ body {
 nav {
   position: relative;
   z-index: 999;
+  margin-top: 20px;
 }
 nav > ul {
   display: flex;
@@ -143,7 +144,7 @@ nav .bg {
 }
 nav:hover .bg {
   width: 100%;
-  height: 410px;
+  height: 440px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -231,50 +232,65 @@ nav:hover .bg {
   background: #ccc;
   margin-bottom: 60px;
 }
-.searchbox {
+.groupsearch {
   width: 1000px;
-  height: 240px;
-  background: rgb(228, 228, 228);
-  margin-bottom: 80px;
+  margin: 0 auto;
+  display: flex;
 }
 #sear {
-  width: 200px;
+  border: 1px solid #2d2d2d;
+  width: 180px;
   height: 50px;
-  margin: 20px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+select {
+  width: 180px;
+  height: 50px;
+  margin-right: 10px;
   font-size: 15px;
   padding: 10px 20px;
-  border: none;
+  border: 0;
+  border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  box-sizing: border-box;
 }
-select > option {
-  line-height: 40px;
-}
-
-.groupsearch {
+#sear::after {
   position: absolute;
-  width: 1000px;
-  margin: 0 auto;
+  top: 50%;
+  width: 14px;
+  height: 9px;
+  background: url(../images/arrow_down_icon.png) no-repeat center center / 100%
+    100%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: all 0.2s;
 }
 #searchname {
-  width: 500px;
+  width: 275px;
   margin-left: 10px;
-  height: 30px;
-  border: none;
+  height: 28px;
+  background: #f6f6f6;
   font-size: 15px;
   padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px 0px 0px 5px;
 }
 #gosearch {
-  width: 200px;
-  padding: 15px 50px;
+  width: 30px;
+  padding: 15px 40px;
   color: #fff;
   background: #2d2d2d;
+  border-radius: 0px 5px 5px 0px;
 }
+
 .page .right .maininfo h2 {
-  margin-bottom: 45px;
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
 .cagobtn {
+  position: relative;
   width: 1000px;
   height: 1100px;
   display: flex;
@@ -285,12 +301,12 @@ select > option {
 .cagobtn img {
   width: 280px;
   height: 280px;
-  border-radius: 50%;
+  border-radius: 10px;
   border: 1px solid rgb(223, 223, 223);
 }
 .cagobtn p {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 15px;
 }
 

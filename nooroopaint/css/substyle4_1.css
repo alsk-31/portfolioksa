@@ -231,19 +231,17 @@ nav:hover .bg {
 .page .right .rightwrap {
   display: flex;
 }
+.page .right .rightwrap .tabcon h3 {
+  margin-bottom: 20px;
+}
 .page .right .rightwrap p:first-child {
   margin-right: 30px;
 }
-.page .right .rightwrap .yearli a {
+.page .right .rightwrap .nsds a {
   font-size: 15px;
   font-weight: 900;
   padding: 5px 15px;
   color: #e31a2c;
-}
-.page .right .rightwrap .btn a {
-  font-size: 15px;
-  font-weight: 900;
-  padding: 5px 15px;
 }
 .page .right .rightwrap .nsds a::after {
   border: 2px;
@@ -252,32 +250,7 @@ nav:hover .bg {
 .page .right .rightwrap .yearli a {
   font-size: 15px;
   padding: 5px 15px;
-  /* color: #fff;
-  border-radius: 0px 15px 15px 0px;
-  border: 1px;
-  background: #2d2d2d; */
 }
-
-/* .page .right #tabcon p {
-  line-height: 1.6em;
-  margin-bottom: 40px;
-}
-.page .right #tabcon img {
-  width: 1000px;
-  height: 500px;
-  margin-bottom: 50px;
-  object-fit: cover;
-}
-.page .right #tabcon .tit_list {
-  position: relative;
-  list-style: disc;
-  margin-left: 50px;
-  margin-top: -25px;
-  margin-bottom: 50px;
-  line-height: 1.6em;
-  font-size: 15px;
-} */
-/*tabcon1-NSDS*/
 
 /*연혁*/
 .page .right #tabcon2 {
@@ -314,15 +287,6 @@ nav:hover .bg {
   background: linear-gradient(to bottom, #cccccc1a, #ccc);
 }
 
-/* .page .right #tabcon2 .tabwrap .tabright li .year::before {
-  content: "";
-  width: 144px;
-  height: 2px;
-  background-color: #a6ce38;
-  position: absolute;
-  top: 12px;
-  right: 0;
-} */ /*년도 원 옆에 녹색 가로선*/
 .page .right #tabcon2 .tabwrap .tabright li > ul::after {
   content: "";
   width: 18px;
@@ -349,7 +313,25 @@ nav:hover .bg {
 .page .right #tabcon2 .tabwrap .tabright ul li {
   line-height: 1.9em;
 }
-
+.page .right #tabcon p {
+  line-height: 1.6em;
+  margin-bottom: 40px;
+}
+.page .right #tabcon img {
+  width: 1000px;
+  height: 500px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+.page .right #tabcon .tit_list {
+  position: relative;
+  list-style: disc;
+  margin-left: 50px;
+  margin-top: -25px;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+  font-size: 15px;
+}
 /*푸터*/
 /* footer {
   background: #2d2d2d;
