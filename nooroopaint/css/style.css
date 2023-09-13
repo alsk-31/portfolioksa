@@ -1,4 +1,7 @@
 @charset "utf-8";
+@font-face {
+  font-family: subway;
+  src: url(../webfont/Subway-Black.woff) format("woff");}
 * {
   margin: 0;
   padding: 0;
@@ -101,7 +104,7 @@ nav ul.sub a {
 nav > ul > li > a {
   display: block;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 60px;
   width: 100%;
 }
@@ -292,6 +295,12 @@ button.next {
   font-size: 14px;
   color: #757575;
 }
+.newice .notice .right img {
+  width: 570px;
+  height: 270px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
 .contech {
   margin-top: 50px;
   background: #f6f6f6;
@@ -477,14 +486,13 @@ button.next {
 }
 .conlast .lastinner > ul > li .overc p {
   font-weight: 900;
-  color: #000;
+  color: #2d2d2d;
 }
 .conlast .lastinner > ul > li .overc p span {
-  font-family: arial;
+  font-family: subway;
   margin-bottom: 5px;
-  font-size: 13px;
-
-  color: #000;
+  font-size: 16px;
+  color: #2d2d2d;
 }
 .conlast .lastinner > ul > li .overc a {
   display: block;

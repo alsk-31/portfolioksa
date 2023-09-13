@@ -1,4 +1,12 @@
 @charset "utf-8";
+@font-face {
+  font-family: subway;
+  src: url(../webfont/Subway-Black.woff) format("woff");
+}
+@font-face {
+  font-family: spokaneo;
+  src: url(../webfont/SpoqaHanSansNeo-Regular.woff) format("woff");
+}
 * {
   margin: 0;
   padding: 0;
@@ -101,7 +109,7 @@ nav ul.sub a {
 nav > ul > li > a {
   display: block;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 60px;
   width: 100%;
 }
@@ -151,8 +159,8 @@ nav:hover .bg {
   margin: 0 auto;
   width: 100%;
   height: 320px;
-  background: url(../images/noroo70years.png) no-repeat;
-  background-position: center 30%;
+  background: url(../images/history_img05.jpg) no-repeat;
+  background-position: center 12%;
   background-size: cover;
 }
 .page {
@@ -220,7 +228,7 @@ nav:hover .bg {
   color: #757575;
 }
 .page .right ul li:first-child::before {
-  content: "";
+  content: none;
 }
 .page .right .pline {
   width: 1000px;
@@ -231,15 +239,18 @@ nav:hover .bg {
 .page .right .maininfo h2 {
   margin-bottom: 18px;
 }
+.page .right .maininfo .mimg {
+  display: flex;
+}
+.page .right .maininfo .mimg .div {
+  position: relative;
+  background-image: url(../images/charactor.png);
+}
 .page .right .maininfo p {
-  line-height: 1.6em;
-  margin-bottom: 60px;
+  line-height: 1.8em;
+  margin-bottom: 90px;
 }
-.page .right .maininfo img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 100px;
-}
+
 .page .right .maincon {
   display: flex;
   justify-content: space-around;
@@ -247,6 +258,7 @@ nav:hover .bg {
   margin-bottom: 50px;
 }
 .page .right .maincon img {
+  margin-top: 10px;
   width: 350px;
   height: 180px;
 }

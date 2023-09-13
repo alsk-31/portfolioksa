@@ -101,7 +101,7 @@ nav ul.sub a {
 nav > ul > li > a {
   display: block;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 60px;
   width: 100%;
 }
@@ -220,7 +220,7 @@ nav:hover .bg {
   color: #757575;
 }
 .page .right ul li:first-child::before {
-  content: "";
+  content: none;
 }
 .page .right .pline {
   width: 1000px;
