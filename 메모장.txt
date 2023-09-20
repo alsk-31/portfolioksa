@@ -67,21 +67,20 @@ setTimeOut(funtion(){},1000)
  https://stickode.tistory.com/675
 검색상자 참고
 
-
+https://studiomeal.com/archives/197 *코딩 설명 flex
 
 http://linearz.co.kr/#cartridge / 병원홈페이지 
 
 https://hyundaigreenfood.com/po/fb/fsb/FBFSB01L.hgc
 
 https://doctorblet.com/index.html
+
+<<타올>>
 슬라이드: 프로모션배너
 1.5장 구매시 -- 증정
 2.신제품 배너 
 3.브랜드상품배너
 
-디자인 (러쉬하단서식) 
-세탁방법, 원단설명, 
-배송안내, 주문안내, 인쇄안내 
 
 process
 구매하는방법을 알려드려요
@@ -151,5 +150,54 @@ https://jqueryui.com/
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 http://gcgreenvet.co.kr/
 연혁페이지 참고
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+setTimeout // 계속시작하지말것
+ location.reload; >> 개체.속성 :리로드 되는것을 한번만 하겠다(트래픽이 과부하되는것을 막기위함)
+리로드가 계속되면 서버가 과부화 되는 현상이 나타날수 있다. 
+https://recoveryman.tistory.com/120  < mouse wheel delta 속성>
+
+웹폰트
+<link>헤더안에
+@import -> css style 안에
+woff otf  wwf? ////ttf (x)
+
+
+perspective: 2300px; /*원근법*/
+
+parseInt() 함수는 문자열 인자를 파싱하여 특정 진수(수의 진법 체계에서 기준이 되는 값)의 
+정수를 반환합니다.
+
+CSS background - Shorthand property
+background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip 
+bg-attachment;
+
+background-position: -29px -4px; // 배경 이미지 위치 바꾸기 (가로, 세로)
+
+background: url(images/bg.jpg) center top/cover no-repeat; }
+
+
+img {
+/*이미지원 가로위치 50% 세로위치 50%로 짜른다.*/
+ clip-path: circle(100px at 50% 50%);
+  }
+
+https://owlcarousel2.github.io/OwlCarousel2/ 
+아울캐러셀 =제이쿼리 swipe사이트 
+
+https://dewworld27.tistory.com/entry/%EC%85%80%EB%A0%89%ED%8A%B8%EB%B0%95%EC%8A%A4-%EC%BB%A4%EC%8A%A4%ED%85%80select-box-custom-ul-li%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0 <-셀렉트박스 만들기~!
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+마무리 덜된거 마무리하기 
+사용하지 않는 페이지 정리, 및 파일정리 하기
+월요일 -호스팅작업: 닷홈. 깃허브
+본인페이지 만들기 -화 수
+주석달기 * 콘텐츠 및 영역에 주석으로 설명적기
+통일되는 스타일 시트 공통으로 묶어 첨부하기
+.. 
+
+포트폴리오 사용 수업자료 + 탭메뉴, clickevent 사용
+0711_09_tab메뉴.html
+0808_06_01_clickevent.html
 

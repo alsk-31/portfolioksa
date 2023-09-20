@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: spokaneo;
-  src: url(../webfont/SpoqaHanSansNeo-Regular.woff) format("woff");
+  src: url(../webfont/SpoqaHanSansNeo-Light.woff) format("woff");
 }
 /*head, 좌측네비 & 우측상단 타이틀 = head.css 참조 */
 * {
@@ -38,7 +38,6 @@ body {
 .top .topmenu ul {
   display: flex;
   align-items: center;
-  /* margin-left: -20px; */
 }
 .top .topmenu ul.left li:first-child {
   margin-top: 30px;
@@ -86,8 +85,6 @@ body {
   border-bottom: none;
 }
 #menu {
-  /* position: relative;
-  left: 0; */
   transition: 0.5s;
   cursor: pointer;
 }
@@ -150,7 +147,7 @@ nav ul.sub {
 }
 nav ul li a.on {
   color: #fff;
-font-size: 15px;
+  font-size: 15px;
 }
 
 nav ul.sub a {

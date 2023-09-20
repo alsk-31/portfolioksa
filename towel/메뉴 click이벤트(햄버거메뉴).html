@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #2d2d2d;
+      }
+
+      /*메뉴*/
+      .allmenu {
+        position: relative;
+        width: 1800px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        height: 50px;
+      }
+      p#menu {
+        position: absolute;
+        right: 0;
+        transition: 0.5s;
+      }
+      p#menu.menu01 {
+        right: 0px;
+        z-index: 999;
+      }
+      /*상단 전체 아이콘 서식*/
+      p span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #000;
+        margin: 6px 0;
+        transition: transform 0.2s ease-in;
+      }
+      .bar1 {
+        transform: translate(0, 9px) rotate(45deg);
+      }
+      .bar2 {
+        opacity: 0;
+      }
+      .bar3 {
+        transform: translate(0, -9px) rotate(-45deg);
+      }
+      div#side {
+        position: fixed;
+        width: 860px;
+        height: 100%;
+        right: -860px;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: right 0.5s ease-in-out;
+      }
+
+      div#side.box {
+        right: 0;
+      }
+      ul.sidewrap {
+        position: relative;
+        left: 50px;
+        width: 750px;
+      }
+
+      ul.navmenu {
+        left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 750px;
+        font-weight: 800px;
+        font-size: 16px;
+        padding: 25px;
+      }
+      ul.sidewrap p {
+        margin-top: 20px;
+        flex-direction: row;
+        font-weight: 800;
+        font-family: notoserif;
+        font-size: 19px;
+        font-style: italic;
+      }
+      ul.sidewrap:first-child {
+        margin-top: 60px;
+      }
+      ul.navmenu li {
+        margin-bottom: 5px;
+        margin-right: 30px;
+      }
+      ul.navmenu li a:hover {
+        font-weight: 900;
+      }
+      ul.navmenu li ul.namenav {
+        left: 70px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="allmenu">
+      <!--메뉴 아이콘 (|||)-->
+      <p id="menu">
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
+      </p>
+    </div>
+    <!--메뉴 아이콘 클릭시 나오는 메뉴리스트-->
+    <div id="side">
+      <ul class="sidewrap">
+        <li>
+          <p><a href="#">COMPANY</a></p>
+          <ul class="navmenu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">연혁/인증</a></li>
+            <li><a href="#">공장소개</a></li>
+            <li><a href="#">카탈로그</a></li>
+          </ul>
+        </li>
+        <li>
+          <p><a href="#">PREMIUM</a></p>
+          <ul class="navmenu">
+            <li><a href="#">T.헤리티지</a></li>
+            <li><a href="#">발렌티노 크리스티</a></li>
+            <li><a href="#">G.sol</a></li>
+          </ul>
+        </li>
+        <li>
+          <p><a href="#">호텔수건</a></p>
+          <ul class="navmenu">
+            <li><a href="#">30수</a></li>
+            <li><a href="#">40수</a></li>
+            <li><a href="#">향균</a></li>
+            <li><a href="#">뱀부</a></li>
+            <li><a href="#">발매트</a></li>
+          </ul>
+        </li>
+        <li>
+          <p><a href="#">용도별 타올</a></p>
+          <ul class="navmenu">
+            <li><a href="#">핸드타올</a></li>
+            <li><a href="#">세면타올</a></li>
+            <li><a href="#">바스타올</a></li>
+            <li><a href="#">스포츠타올</a></li>
+            <li><a href="#">발매트</a></li>
+          </ul>
+        </li>
+        <li>
+          <p><a href="#">중량별 타올</a></p>
+          <ul class="navmenu">
+            <li><a href="#">90g~130g(얇음)</a></li>
+            <li><a href="#">140g~150g(보통)</a></li>
+            <li><a href="#">160g~170g(도톰)</a></li>
+            <li><a href="#">180g~(두꺼움)</a></li>
+          </ul>
+        </li>
+        <li>
+          <p><a href="#">타올답례품</a></p>
+          <ul class="navmenu">
+            <li><a href="#">3종세트</a></li>
+            <li><a href="#">5종세트</a></li>
+            <li><a href="#">바스세트</a></li>
+            <li><a href="#">종합세트</a></li>
+          </ul>
+        </li>
+        <li>
+          <p><a href="#">COMMUNITY</a></p>
+          <ul class="navmenu">
+            <li><a href="#">프로모션</a></li>
+            <li><a href="#">타올이야기</a></li>
+            <li><a href="#">주문제작문의</a></li>
+            <li><a href="#">개인결제</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--메뉴 아이콘(|||) 클릭이벤트-->
+    <script>
+      document.getElementById("menu").onclick = function () {
+        this.classList.toggle("menu01");
+        document.getElementById("one").classList.toggle("bar1");
+        document.getElementById("two").classList.toggle("bar2");
+        document.getElementById("three").classList.toggle("bar3");
+        document.getElementById("side").classList.toggle("box");
+      };
+    </script>
+  </body>
+</html>
