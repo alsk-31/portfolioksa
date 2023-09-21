@@ -52,14 +52,15 @@ article .bestcon {
   margin-bottom: 20px;
 }
 p#ptitle {
-  font-size: 17px;
+  font-size: 18px;
   font-family: notoserif;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 p#psub {
   font-family: spokaneo;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.6em;
   color: rgb(124, 124, 124);
 }
 h3 {
@@ -147,7 +148,7 @@ h3 {
   height: 200px;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 article.ourcon {
@@ -184,7 +185,7 @@ article.ourcon .our_list li {
   font-size: 12px;
   text-align: center;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
@@ -196,56 +197,61 @@ article.ourcon .our_list li span {
 }
 /*전체 콘텐츠(6개)영역: 배경 사진 첨부이미지*/
 .ourwrap.as {
-  background: url(../image/felix-khadri-I45B_X9lAFI-unsplash.jpg);
+  background: url(../image/thirteen-j-g4P1CbTvTZU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right 40%;
 }
 .ourwrap.bs {
-  background: url(../image/15172901476600_pic_300.jpg);
+  background: url(../image/nina-mercado-CnrDuY0tFrg-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .ourwrap.cs {
-  background: url(../image/img01.jpg);
+  background: url(../image/felix-khadri-I45B_X9lAFI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+.ourwrap.ds {
+  background: url(../image/ourconbg_04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .ourwrap.es {
-  background: url(../image/pro_03.jpg);
+  background: url(../image/janko-ferlic-eBtwD6ZG78I-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .ourwrap.fs {
-  background: url(../image/pro_02.jpg);
+  background: url(../image/tom-briskey-y5v5taIw-j4-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center 60%;
 }
-.ourwrap.ds {
-  background: url(../image/pro_01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/*전체 콘텐츠(6개)영역: 박스 안 아이콘 첨부이미지*/
+
+/*전체 콘텐츠(6개)영역: 박스 안 아이콘*/
 article.ourcon .our_list li:nth-child(1) {
-  background-image: url(../image/camera1.svg);
+  background-image: url(../image/ourcon1.svg);
 }
 article.ourcon .our_list li:nth-child(2) {
-  background-image: url(../image/camera1.svg);
+  background-image: url(../image/ourcon2.svg);
 }
 article.ourcon .our_list li:nth-child(3) {
-  background-image: url(../image/camera1.svg);
+  background-image: url(../image/ourcon3.svg);
 }
 article.ourcon .our_list li:nth-child(4) {
-  background-image: url(../image/camera1.svg);
+  background-image: url(../image/ourcon4.svg);
 }
 article.ourcon .our_list li:nth-child(5) {
-  background-image: url(../image/camera1.svg);
+  background-image: url(../image/ourcon5.svg);
 }
 article.ourcon .our_list li:nth-child(6) {
-  background-image: url(../image/camera1.svg);
+  background-image: url(../image/ourcon6.svg);
 }
 /*전체 콘텐츠(6개) 영역: 아이콘에 마우스 올릴때 해당 아이콘의 변경사항*/
-article.ourcon .our_list li:nth-child(1):hover {
+article.ourcon .our_list li:hover {
+  z-index: 50;
   width: 300px;
   height: 170px;
   font-size: 12px;
@@ -253,87 +259,8 @@ article.ourcon .our_list li:nth-child(1):hover {
   text-align: center;
   line-height: 1.6em;
   cursor: pointer;
-  border-radius: 20px;
-  background-image: url(../image/felix-khadri-I45B_X9lAFI-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  color: #f00;
-}
-article.ourcon .our_list li:nth-child(2):hover {
-  width: 300px;
-  height: 170px;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.6em;
-  cursor: pointer;
-  border-radius: 20px;
-  background-image: url(../image/felix-khadri-I45B_X9lAFI-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  color: #f00;
-}
-article.ourcon .our_list li:nth-child(3):hover {
-  width: 300px;
-  height: 170px;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.6em;
-  cursor: pointer;
-  border-radius: 20px;
-  background-image: url(../image/wash1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  color: #f00;
-}
-article.ourcon .our_list li:nth-child(4):hover {
-  width: 300px;
-  height: 170px;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.6em;
-  cursor: pointer;
-  border-radius: 30px;
-  background-image: url(../image/wash1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  color: #f00;
-}
-article.ourcon .our_list li:nth-child(5):hover {
-  width: 300px;
-  height: 170px;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.6em;
-  cursor: pointer;
-  border-radius: 20px;
-  background-image: url(../image/wash1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  color: #f00;
-}
-article.ourcon .our_list li:nth-child(6):hover {
-  width: 300px;
-  height: 170px;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.6em;
-  cursor: pointer;
-  border-radius: 20px;
-  background-image: url(../image/wash1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  color: #f00;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 footer {
