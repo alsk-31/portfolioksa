@@ -7,6 +7,10 @@
   font-family: spoka_B;
   src: url(../webfont/SpoqaHanSansNeo-Bold.woff) format("woff");
 }
+@font-face {
+  font-family: skranji_B;
+  src: url(../webfont/Skranji-Bold.woff) format("woff");
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,106 +27,150 @@ a {
 
 body {
   font-family: spoka_r;
+  font-size: 15px;
+  line-height: 1.7em;
 }
 
 header {
-  display: flex;
   width: 100%;
-  height: 70px;
-  line-height: 70px;
+  top: 0;
+  left: 0;
+  height: 80px;
+  margin: 0 auto;
+  line-height: 80px;
   font-family: spoka_B;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
 }
-header nav {
+header .topmenu {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+header .topmenu .top_left {
+  width: 166px;
+  height: 39px;
+  vertical-align: center;
+}
+header .topmenu .top_left img {
+  vertical-align: middle;
+}
+header .topmenu nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0 auto;
   font-size: 15px;
 }
-header ul {
+header .topmenu nav ul {
   width: 100%;
   margin-left: 5%;
   display: flex;
 }
-header li {
-  margin-right: 2%;
+header .topmenu nav ul li {
+  margin-right: 4%;
+}
+header .topmenu nav ul a:hover {
+  font-weight: 900;
+  color: red;
 }
 
+/* 1. 인사말 영역*/
 section.sec1 {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  margin-top: 100px;
 }
-section.sec1 .firstsaying {
+section.sec1 p.firstsaying {
   width: 100%;
+  font-family: skranji_B;
   font-size: 70px;
-  font-weight: 900;
   margin-left: 50%;
   margin-bottom: 90px;
+  padding: 90px;
 }
-section.sec1 p {
+section.sec1 p:nth-child(2) {
   margin-top: 150px;
-  line-height: 2rem;
   width: 65%;
 }
-section.sec1 .img01 {
+
+.img01 {
   width: 100%;
-  height: 433px;
+  margin: 0 auto;
+  height: 400px;
+  background: url(../image/topslide_01.png) center/cover;
   margin-top: 100px;
 }
 
+/* 2. KangSeonga 소개 영역*/
 section.sec2 {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 300px;
 }
 section.sec2 p.firstsaying {
   width: 100%;
+  font-family: skranji_B;
   font-size: 36px;
-  font-weight: 900;
   margin-bottom: 90px;
 }
-section.sec2 div.sec2wrap {
+section.sec2 .sec2wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-section.sec2 div.sec2wrap p {
-  line-height: 2rem;
+section.sec2 .sec2wrap .myself {
   width: 30%;
 }
-section.sec2 div.sec2wrap .img01 {
+section.sec2 .sec2wrap .img02 {
   width: 690px;
   height: 500px;
-  margin-top: 100px;
 }
 
+/* 3. 로고 및 상징 이미지 영역 */
 section.sec3 {
-  margin-top: 100px;
-  /*배경 사진구역*/
+  margin-top: 250px;
+  background: url(../image/logoimg.png) center/cover fixed;
+  /*배경 사진*/
 }
-section.sec3 div.symbol {
+section.sec3 .symbolbg {
   position: relative;
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  height: 100vh;
+  /* 로고 이미지 */
 }
-section.sec3 .bg img {
-  position: relative;
+section.sec3 .symbolbg img {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-section.sec3 .bg img .logowhite {
+section.sec3 .symbolbg .innerlogo {
   position: absolute;
-}
-section.sec3 .logowhite {
-  display: block;
-  position: absolute;
+  width: 276px;
+  height: 65px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* 4. PORTFOLIO 영역 */
 section.sec4 {
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 300px;
 }
 section.sec4 p {
-  font-size: 24px;
+  font-family: skranji_B;
+  font-size: 36px;
+  margin-bottom: 90px;
 }
 section.sec4 .slide {
   width: 100%;
@@ -130,13 +178,13 @@ section.sec4 .slide {
   height: 400px;
   border: 1px solid #000;
 }
-section.sec4 .item img {
+section.sec4 .slide .item img {
   width: 100vh;
   height: 400px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-section.sec4 .owl-prev span {
+section.sec4 .slide .owl-prev span {
   position: absolute;
   display: block;
   text-indent: -9999px;
@@ -147,7 +195,7 @@ section.sec4 .owl-prev span {
   background: url(../../images/btns.png);
   background-position: -6px -4px;
 }
-section.sec4 .owl-next span {
+section.sec4 .slide .owl-next span {
   position: absolute;
   display: block;
   text-indent: -9999px;
@@ -159,15 +207,13 @@ section.sec4 .owl-next span {
   background-position: -29px -4px;
 }
 
+/* 5.contact 영역 */
 section.sec5 {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 530px;
   margin-top: 300px;
-}
-section.sec5 p.firstsaying {
-  width: 100%;
-  font-size: 36px;
-  font-weight: 900;
-  margin-bottom: 90px;
 }
 section.sec5 div.sec5wrap {
   width: 100%;
@@ -179,28 +225,64 @@ section.sec5 div.sec5wrap div.img03 {
   width: 690px;
   height: 530px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 section.sec5 div.sec5wrap div.contactme {
-  line-height: 2rem;
   width: 30%;
+  display: flex;
+  height: 530px;
+  flex-direction: column;
+  justify-content: space-between;
 }
-section.sec5 div.sec5wrap p {
-  margin-bottom: 20%;
+section.sec5 div.sec5wrap div.contactme .over {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-section.sec5 div.sec5wrap .coninfo {
-  display: inline-flex;
+section.sec5 div.sec5wrap div.contactme p.firstsaying {
+  width: 100%;
+  font-family: skranji_B;
+  font-size: 36px;
+}
+section.sec5 div.sec5wrap div.contactme .coninfo {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 section.sec5 div.sec5wrap table {
+  align-items: flex-end;
   display: block;
   position: relative;
   width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
   border-collapse: collapse;
   border-top: 2px solid #2d2d2d;
   border-bottom: 2px solid #2d2d2d;
 }
 section.sec5 div.sec5wrap table tr {
-  margin-right: 10px;
+  font-size: 13px;
+}
+section.sec5 div.sec5wrap table tr td {
+  line-height: 2em;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: spoka_R;
+  background-color: #2d2d2d;
+  color: #fff;
+  margin-top: 100px;
+}
+footer .footerwrap {
+  position: relative;
+  vertical-align: middle;
+}
+footer .footerwrap p {
+  line-height: 1.7em;
+  text-align: center;
+  font-size: 12px;
 }
